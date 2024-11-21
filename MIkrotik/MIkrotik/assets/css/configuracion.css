@@ -1,0 +1,101 @@
+/* Estilo del contenido principal */
+.main-content {
+    margin-left: 270px; /* Ajuste para la barra lateral */
+    padding: 40px;
+    min-height: 100vh; /* Asegura que ocupe al menos el 100% de la altura */
+    display: flex;
+    flex-direction: column; /* Disposición en columna */
+}
+
+/* Configuración y lista de routers */
+.configuracion-container {
+    display: flex; /* Usar flexbox para la disposición */
+    gap: 20px; /* Espacio entre las secciones */
+    margin-top: 20px;
+}
+
+/* Lista de routers */
+.lista-router {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 2; /* Hacer que esta sección ocupe más espacio */
+}
+
+/* Inicio de sesión */
+.inicio-sesion {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1; /* Hacer que esta sección ocupe menos espacio */
+    min-width: 300px; /* Asegurar un tamaño mínimo */
+}
+
+/* Elementos del router */
+.router-item {
+    border-radius: 8px;
+    background-color: #007bff; /* Color de fondo */
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    flex: 1 1 200px; /* Ajustar el tamaño de las tarjetas */
+    transition: transform 0.3s;
+}
+
+.router-item:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+/* Acciones */
+.actions {
+    margin-top: 10px;
+}
+
+.actions a {
+    color: #ffdd57; /* Color para los enlaces */
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Botón guardar */
+.btn-guardar {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Botón ocupa el ancho completo */
+}
+
+.btn-guardar:hover {
+    background-color: #218838;
+}
+
+/* Estilo de los inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+

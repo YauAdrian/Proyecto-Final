@@ -1,0 +1,190 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f6fa;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #2f3640;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar h2 {
+    color: #00a8ff;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #576574;
+}
+
+.sidebar ul li a i {
+    margin-right: 15px;
+}
+
+/* Estilo del contenido principal */
+.main-content {
+    margin-left: 270px;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 30px;
+    color: #2c3e50;
+}
+
+.header p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* Estilo de las tarjetas */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 40px;
+    color: #00a8ff;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Estilo del overlay */
+.overlay {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurecer más el fondo */
+    z-index: 100; /* Asegúrate de que esté por encima del contenido */
+}
+
+/* Estilo del minidashboard */
+.minidashboard {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* Color blanco */
+    padding: 30px; /* Espaciado interior */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    z-index: 200; /* Asegúrate de que esté por encima del overlay */
+    width: 400px; /* Ancho del minidashboard */
+    animation: fadeIn 0.3s ease; /* Animación al aparecer */
+}
+
+/* Estilo de los botones dentro del minidashboard */
+.minidashboard button {
+    background-color: #00a8ff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado */
+    margin-top: 10px; /* Espacio entre botones */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave */
+    width: 100%; /* Botones ocupan todo el ancho */
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+.minidashboard button:hover {
+    background-color: #007bbd; /* Color más oscuro al pasar el mouse */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

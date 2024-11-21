@@ -1,0 +1,89 @@
+/* Estilo del contenido principal */
+.gestion-container {
+    display: flex;
+    justify-content: space-between; /* Para dividir en dos columnas */
+    gap: 20px; /* Espacio entre los cuadros */
+    margin-top: 20px;
+}
+
+/* Lado izquierdo y derecho */
+.izquierda, .derecha {
+    flex: 1; /* Cada lado ocupa el mismo espacio */
+}
+
+/* Cuadro de Sesión, MikroTik y Datos del Sistema */
+.sesion-container, .mikrotik-container, .sistema-container {
+    background-color: #fff;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 450px; /* Hacer los cuadros más largos */
+    margin: auto; /* Centrar los cuadros horizontalmente */
+    overflow: hidden; /* Evitar el desbordamiento */
+}
+
+/* Espaciado adicional entre los cuadros */
+.mikrotik-container {
+    margin-top: 20px; /* Aumentar el margen superior del cuadro de MikroTik */
+}
+
+/* Títulos con fondo verde */
+.sesion-container h2, .mikrotik-container h2, .sistema-container h2 {
+    background-color: #28a745; /* Fondo verde para los títulos */
+    color: #fff; /* Color del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado dentro del cuadro del título */
+    margin: -15px -15px 15px -15px; /* Alinear el fondo con el cuadro */
+}
+
+/* Estilo de los inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: calc(100% - 24px); /* Ajustar el ancho para que se mantenga dentro del cuadro */
+    padding: 10px; /* Ajustar el padding */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #28a745; /* Color verde al enfocar */
+    outline: none;
+}
+
+/* Estilo de los botones */
+.acciones {
+    display: flex;
+    justify-content: space-between; /* Distribuir botones equitativamente */
+    margin-top: 15px;
+}
+
+.btn-guardar, .btn-conectar, .btn-ping {
+    background-color: #28a745; /* Color de fondo para los botones */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1; /* Hacer que los botones ocupen espacio igual */
+    margin-right: 10px; /* Espacio entre botones */
+}
+
+.btn-guardar:hover, .btn-conectar:hover, .btn-ping:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+
+.btn-ping {
+    margin-right: 0; /* Quitar margen derecho al último botón */
+}
+
+

@@ -1,0 +1,38 @@
+[
+    {
+        "session": {
+            "nombre": "pavon"
+        },
+        "mikrotik": {
+            "ip": "192.168.100.79",
+            "usuario": "admin",
+            "password": "admin"
+        },
+        "sistema": {
+            "nombre_hotspot": "pavoncito",
+            "dns_name": "192.168.100.1",
+            "auto_load": "0",
+            "idle_timeout": "0",
+            "interfaz_grafico": "0",
+            "reporte_en_vivo": "0"
+        }
+    },
+    {
+        "session": {
+            "nombre": "chaka"
+        },
+        "mikrotik": {
+            "ip": "10.33.24.65",
+            "usuario": "admin",
+            "password": "admin"
+        },
+        "sistema": {
+            "nombre_hotspot": "chakalito",
+            "dns_name": "10.33.24.1",
+            "auto_load": "0",
+            "idle_timeout": "0",
+            "interfaz_grafico": "0",
+            "reporte_en_vivo": "0"
+        }
+    }
+]
